@@ -19,6 +19,14 @@ public:
 	void Print() {
 		cout << "Fraction: " << numerator << "/" << denominator << endl;
 	}
+
+	int getNumerator() {
+		return numerator;
+	}
+
+	int getDenominator() {
+		return denominator;
+	}
 };
 
 int main()
