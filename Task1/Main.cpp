@@ -9,22 +9,32 @@ private:
 	int denominator;
 
 public:
-	void Init() {
+	void Init(int numerator, int denominator)
+	{
+		this->numerator = numerator;
+		this->denominator = denominator;
+	}
+
+	void Init() 
+	{
 		cout << "Input Numerator: ";
 		cin >> numerator;
 		cout << "Input Denominator: ";
 		cin >> denominator;
 	}
 
-	void Print() {
+	void Print() 
+	{
 		cout << "Fraction: " << numerator << "/" << denominator << endl;
 	}
 
-	int getNumerator() {
+	int getNumerator() 
+	{
 		return numerator;
 	}
 
-	int getDenominator() {
+	int getDenominator() 
+	{
 		return denominator;
 	}
 };
